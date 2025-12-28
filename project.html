@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Vortex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at top, #1b1f3b, #0a0c1a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      gap: 40px;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      max-width: 420px;
+      width: 90%;
+    }
+
+    .tutorial {
+      max-width: 320px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 18px;
+      padding: 30px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .tutorial h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .tutorial p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 15px;
+    }
+
+    .tutorial ol {
+      padding-left: 18px;
+    }
+
+    .tutorial li {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      opacity: 0.85;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 16px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #5f7cff, #7a5cff);
+      color: white;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 30px rgba(95, 124, 255, 0.4);
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(95, 124, 255, 0.6);
+    }
+
+    .error {
+      margin-top: 25px;
+      font-size: 0.95rem;
+      color: #ff6b6b;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="tutorial">
+    <h2>Tutorial</h2>
+    <p><strong>How to use Project Vortex</strong></p>
+    <ol>
+      <li>Download the Project Vortex launcher for mobile.</li>
+      <li>Open the launcher and download the game inside it.</li>
+      <li>Once the download is finished, launch the game.</li>
+      <li>Log in using the account you created on the Discord.</li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h1>Project Vortex</h1>
+    <p>Mobile Edition</p>
+
+    <button onclick="showError()">Download Project Vortex</button>
+
+    <div id="error" class="error">
+      ❌ ERROR: not the cookie you're looking for
+    </div>
+  </div>
+
+  <script>
+    function showError() {
+      // Redirect to Project Vortex download URL
+      window.location.href = "https://vortexdownload/?apkvortexlauncher.com";
+    }
+  </script>
+</body>
+</html>
